@@ -8,8 +8,7 @@ from redbot.core.utils.chat_formatting import pagify
 EmbedField = namedtuple("EmbedField", "name value inline")
 EMPTY_STRING = "\N{ZERO WIDTH SPACE}"
 INVITE_URL = (
-    "https://discordapp.com/api/oauth2/authorize?client_id="
-    "644118957917208576&permissions=322624&scope=bot"
+    "https://discord.com/api/oauth2/authorize?client_id=743736372040564827&permissions=2048&scope=bot"
 )
 COMMANDS_PAGE = ""
 COMMUNITY_SERVER = "https://discord.gg/WFGuquz"
