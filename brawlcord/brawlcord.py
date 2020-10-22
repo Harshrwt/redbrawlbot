@@ -124,8 +124,8 @@ old_info = None
 BRAWLSTARS = "https://blog.brawlstars.com/index.html"
 FAN_CONTENT_POLICY = "https://www.supercell.com/fan-content-policy"
 BRAWLCORD_CODE_URL = (
-    "https://raw.githubusercontent.com/snowsee/brawlcord/"
-    "release/brawlcord/brawlcord.py"
+    ""
+    ""
 )
 REDDIT_LINK = ""
 SOURCE_LINK = ""
@@ -220,7 +220,7 @@ class Brawlcord(commands.Cog):
 
     @commands.command(name="info", aliases=["brawlcord"])
     async def _brawlcord(self, ctx: Context):
-        """Show info about Brawlcord"""
+        """Show info about Brawl Starr"""
 
         info = (
             "Brawl Starr is a Discord bot which allows users to simulate"
@@ -243,7 +243,7 @@ class Brawlcord(commands.Cog):
 
         embed.add_field(name="About Brawlcord", value=info, inline=False)
 
-        embed.add_field(name="Creator", value=f"[Snowsee]({REDDIT_LINK})")
+        embed.add_field(name="Creator", value=f"[]({REDDIT_LINK})")
 
         page = urllib.request.urlopen(BRAWLCORD_CODE_URL)
 
@@ -1349,7 +1349,7 @@ class Brawlcord(commands.Cog):
                         lb_brawler = self.bot.get_command('leaderboard brawler')
                         return await ctx.invoke(lb_brawler, brawler_name=brawler)
 
-            title = "Brawlcord Leaderboard"
+            title = "Brawl Starr Leaderboard"
 
             url = "https://www.starlist.pro/assets/icon/trophy.png"
 
@@ -1359,7 +1359,7 @@ class Brawlcord(commands.Cog):
     async def pb_leaderboard(self, ctx: Context):
         """Display the personal best leaderboard"""
 
-        title = "Brawlcord Leaderboard - Highest Trophies"
+        title = "Brawl Starr Leaderboard - Highest Trophies"
 
         url = "https://www.starlist.pro/assets/icon/trophy.png"
 
@@ -1374,7 +1374,7 @@ class Brawlcord(commands.Cog):
         if not brawler:
             return await ctx.send(f"{brawler_name} does not exist!")
 
-        title = f"Brawlcord {brawler} Leaderboard"
+        title = f"Brawl Starr {brawler} Leaderboard"
 
         url = f"{brawler_thumb.format(brawler)}"
 
@@ -1466,9 +1466,9 @@ class Brawlcord(commands.Cog):
             data = await self.bot.application_info()
             invite_url = discord.utils.oauth_url(data.id, permissions=perms)
             value = (
-                "Add Brawlcord to your server by **[clicking here]"
+                "Add Brawl Starr to your server by **[clicking here]"
                 f"({invite_url})**.\n\n**Note:** By using the link"
-                " above, Brawlcord will be able to"
+                " above, Brawl Starr will be able to"
                 " read messages,"
                 " send messages,"
                 " manage messages,"
@@ -1897,7 +1897,7 @@ class Brawlcord(commands.Cog):
         """Show bot support information."""
 
         txt = (
-            "You can get support for the bot in the Brawlcord"
+            "You can get support for the bot in the Brawl Starr"
             f" community server: {COMMUNITY_SERVER}"
         )
 
@@ -1905,10 +1905,10 @@ class Brawlcord(commands.Cog):
 
     @commands.command(name="discord")
     async def _discord(self, ctx: Context):
-        """Show a link to the community Brawlcord server"""
+        """Show a link to the community Brawl Starr server"""
 
         await ctx.send(
-            f"You can join the Brawlcord community server by using this link: {COMMUNITY_SERVER}"
+            f"You can join the Brawl Starr community server by using this link: {COMMUNITY_SERVER}"
         )
 
     @commands.command()
