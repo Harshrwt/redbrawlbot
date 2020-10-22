@@ -127,8 +127,8 @@ BRAWLCORD_CODE_URL = (
     "https://raw.githubusercontent.com/snowsee/brawlcord/"
     "release/brawlcord/brawlcord.py"
 )
-REDDIT_LINK = "https://www.reddit.com/user/Snowsee"
-SOURCE_LINK = "https://github.com/snowsee/brawlcord"
+REDDIT_LINK = ""
+SOURCE_LINK = ""
 
 DAY = 86400
 WEEK = 604800
@@ -223,7 +223,7 @@ class Brawlcord(commands.Cog):
         """Show info about Brawlcord"""
 
         info = (
-            "Brawlcord is a Discord bot which allows users to simulate"
+            "Brawl Starr is a Discord bot which allows users to simulate"
             f" a simple version of [Brawl Stars]({BRAWLSTARS}), a mobile"
             f" game developed by Supercell. \n\nBrawlcord has features"
             " such as interactive 1v1 Brawls, diverse Brawlers and"
@@ -266,7 +266,7 @@ class Brawlcord(commands.Cog):
         embed.add_field(
             name="Feedback",
             value=(
-                f"You can give feedback to improve Brawlcord in"
+                f"You can give feedback to improve Brawl Starr in"
                 f" [the community server]({COMMUNITY_SERVER})."
             ),
             inline=False
@@ -409,7 +409,7 @@ class Brawlcord(commands.Cog):
                 " It's time to test your skills in the real world!"
             )
 
-        desc = ("Hi, I'm Shelly! I'll introduce you to the world of Brawlcord."
+        desc = ("Hi, I'm Shelly! I'll introduce you to the world of Brawl Starr."
                 " Don't worry Brawler, it will only take a minute!")
 
         embed = discord.Embed(
@@ -447,13 +447,13 @@ class Brawlcord(commands.Cog):
         embed.add_field(
             name="\u200b\n__Feedback:__",
             value=(
-                "You can give feedback to improve Brawlcord in the"
-                f" [Brawlcord community server]({COMMUNITY_SERVER})."
+                "You can give feedback to improve Brawl Starr in the"
+                f" [Brawl Starr community server]({COMMUNITY_SERVER})."
             ),
             inline=False
         )
 
-        embed.set_footer(text="Thanks for using Brawlcord.",
+        embed.set_footer(text="Thanks for using Brawl Starr.",
                          icon_url=ctx.me.avatar_url)
 
         try:
@@ -1741,7 +1741,7 @@ class Brawlcord(commands.Cog):
 
         credits_ = (
             "- [`Supercell`](https://supercell.com/en/)"
-            "\n- [`Red`](https://github.com/Cog-Creators/Red-DiscordBot)"
+            "\n- [`Red`] (https:red.com) - Huge thanks to red for hosting and all stuff"
             "\n- [`Star List`](https://www.starlist.pro) - Huge thanks to"
             " Henry for allowing me to use assets from his site!"
             "\n- [`Brawl Stats`](https://brawlstats.com) - Huge thanks to"
@@ -2000,14 +2000,14 @@ class Brawlcord(commands.Cog):
 
     @commands.command(name="license")
     async def license_(self, ctx: Context):
-        """Shows's Brawlcord's license"""
+        """Shows's Brawl Starr's license"""
 
         await ctx.send(
-            "Brawlcord is an instance of Red-DiscordBot, which is licensed under the GNU GPLv3."
+            "Brawl Starr is an instance of Red, which is licensed under the GNU GPLv3."
             " For more information about Red's license, use `licenseinfo` command."
-            "\n\nThe source code of Brawlcord itself is available under the MIT license."
-            " The full text of the license is available at"
-            " <https://github.com/snowsee/brawlcord/blob/release/LICENSE>"
+            "\n\nThe source code of Brawl Starr itself is available under the MIT license."
+            " The full text of the license is available "
+            " <>"
         )
 
     @commands.group(name="club")
@@ -2725,7 +2725,7 @@ class Brawlcord(commands.Cog):
         users = sorted(users, key=lambda k: k[1], reverse=True)
 
         embed_desc = (
-            "Check out who is at the top of the Brawlcord leaderboard!\n\u200b"
+            "Check out who is at the top of the Brawl Starr leaderboard!\n\u200b"
         )
         add_user = True
         # return first 10 (or fewer) members
