@@ -225,7 +225,7 @@ class Brawlcord(commands.Cog):
         info = (
             "Brawl Starr is a Discord bot which allows users to simulate"
             f" a simple version of [Brawl Stars]({BRAWLSTARS}), a mobile"
-            f" game developed by Supercell. \n\nBrawlcord has features"
+            f" game developed by Supercell. \n\nBrawl Starr has features"
             " such as interactive 1v1 Brawls, diverse Brawlers and"
             " leaderboards! You can suggest more features in [the community"
             f" server]({COMMUNITY_SERVER})!\n\n{ctx.me.name} is currently in"
