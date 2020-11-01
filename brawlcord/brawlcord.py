@@ -1758,7 +1758,7 @@ class Brawlcord(commands.Cog):
     @commands.admin_or_permissions(manage_guild=True)
     @commands.guild_only()
     async def _set_prefix(self, ctx: Context, *prefixes: str):
-        """Set Brawlcord's server prefix(es)
+        """Set Brawl Starr's server prefix(es)
 
         Enter prefixes as a comma separated list.
         """
@@ -1998,7 +1998,7 @@ class Brawlcord(commands.Cog):
 
         await menu(ctx, embeds, DEFAULT_CONTROLS)
 
-    @commands.command()
+    @commands.command(name="bd!c")
     async def license_(self, ctx: Context):
         """Shows's Brawl Starr's license"""
 
