@@ -15,7 +15,7 @@ COMMUNITY_SERVER = "https://discord.gg/WFGuquz"
 
 
 class BrawlcordHelp(RedHelpFormatter):
-    """Brawlcord's help implementation.
+    """Brawl Starr's help implementation.
 
     Lists all commands and their descriptions in custom categories.
 
@@ -34,7 +34,7 @@ class BrawlcordHelp(RedHelpFormatter):
 
         if not await ctx.embed_requested():
             return await ctx.send(
-                "Brawlcord requires the use of embeds. Please enable them!"
+                "Brawl Starr requires the use of embeds. Please enable them!"
             )
 
         tagline = self.get_default_tagline(ctx)
@@ -61,7 +61,7 @@ class BrawlcordHelp(RedHelpFormatter):
         economy_cmds = ["brawlbox", "bigbox", "claim", "rewards", "gift"]
         misc_cmds = [
             "setprefix", "report", "invite", "info",
-            "licenseinfo", "redinfo", "support", "discord"
+            "support", "discord"
         ]
 
         titles = ["Gameplay", "Statistics", "Economy", "Misc"]
