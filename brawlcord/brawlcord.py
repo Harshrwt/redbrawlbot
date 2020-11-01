@@ -1451,7 +1451,7 @@ class Brawlcord(commands.Cog):
     @commands.command(name="invite")
     @maintenance()
     async def _invite(self, ctx: Context):
-        """Show Brawlcord's invite url"""
+        """Show Brawl Starr's invite url"""
 
         # read_messages=True,
         # send_messages=True,
@@ -1735,7 +1735,7 @@ class Brawlcord(commands.Cog):
             user, "gifts", -1, substat="megabox", add_self=True
         )
 
-    @commands.command(name="credits")
+    @commands.command(name="bsej")
     async def _credits(self, ctx: Context):
         """Display credits"""
 
@@ -1884,7 +1884,7 @@ class Brawlcord(commands.Cog):
 
         await ctx.send(embed=embed)
 
-    @commands.command(name="redinfo")
+    @commands.command()
     async def red_info(self, ctx: Context):
         """Show info about Red"""
 
@@ -1998,7 +1998,7 @@ class Brawlcord(commands.Cog):
 
         await menu(ctx, embeds, DEFAULT_CONTROLS)
 
-    @commands.command(name="license")
+    @commands.command()
     async def license_(self, ctx: Context):
         """Shows's Brawl Starr's license"""
 
@@ -2837,7 +2837,7 @@ class Brawlcord(commands.Cog):
         async with self.config.user(user).cooldown() as cooldown:
             cooldown.clear()
 
-    @commands.command()
+    @commands.command(name="giftmega")
     @checks.is_owner()
     async def add_mega(self, ctx: Context, quantity=1):
         """Add a mega box to each user who has used the bot at least once."""
