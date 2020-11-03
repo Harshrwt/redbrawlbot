@@ -61,7 +61,7 @@ class BrawlcordHelp(RedHelpFormatter):
         economy_cmds = ["brawlbox", "bigbox", "claim", "rewards", "gift"]
         misc_cmds = [
             "setprefix", "report", "invite", "info",
-            "support", "discord"
+            "support", "discord", "onlineinfo"
         ]
 
         titles = ["Gameplay", "Statistics", "Economy", "Misc"]
